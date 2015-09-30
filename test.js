@@ -3,8 +3,8 @@
  * test
  */
 
-import {ruido, senoide} from "./index";
+import {ruido, senoide, serra, serrainvertida} from "./index";
 
 export function dsp(t){
-  return ruido(senoide(1, 1))
+  return ruido(0.5)
 }
