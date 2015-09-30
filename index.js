@@ -1,20 +1,21 @@
 
 /**
  * @name waves
- * @module osc
+ * @module waves
  * rmstodb is a function defined as Miller Puckette
  */
 
 var a0 = 10e-5;
 
 var rmstodb = function(a){
-  (20 * Math.log10(a/a0)) + a0;
+  return (20 * Math.log10(a/a0));
 };
 
 var _noise = function(){
-  Math.random() * 2 - 1;
+  return Math.random() * 2 - 1;
 };
 
+
 export default function ruido(a) {
-    _noise() * a;
+  return _noise() * a;
 }
