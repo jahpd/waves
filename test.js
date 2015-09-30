@@ -3,8 +3,8 @@
  * test
  */
 
-import ruido from "jahpd/waves";
+import {ruido, senoide} from "./index";
 
 export function dsp(t){
-  return noise(0.05)
+  return ruido(senoide(1, 1))
 }
